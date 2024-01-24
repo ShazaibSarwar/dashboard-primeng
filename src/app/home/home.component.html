@@ -1,0 +1,122 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card-container d-flex flex-column">
+        <p-card>
+          <ng-template pTemplate="title">
+            <div class="card-title">Strom</div>
+          </ng-template>
+          <ng-template pTemplate="content">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="description">Verbrauch heute</div>
+                <div class="reading">336.77 kWh</div>
+              </div>
+              <div class="col-md-3">
+                <div class="description">Leistung heute</div>
+                <div class="reading">24.52 kW</div>
+              </div>
+              <div class="col-md-3">
+                <div class="description">Verbrauch Betrieb</div>
+                <div class="reading">336.77 kWh</div>
+              </div>
+              <div class="col-md-3">
+                <div class="description">Verbrauch Standby</div>
+                <div class="reading">0.00 kWh</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="description">Kosten heute</div>
+                <div class="reading">72.03 $</div>
+              </div>
+              <div class="col-md-3">
+                <div class="description">pro Stunde</div>
+                <div class="reading">5.24 $</div>
+              </div>
+              <div class="col-md-3">
+                <div class="description">Emmission heute</div>
+                <div class="reading">141.44 kg</div>
+              </div>
+              <div class="col-md-3">
+                <div class="description">pro Stunde</div>
+                <div class="reading">10.3 kg</div>
+              </div>
+            </div>
+          </ng-template>
+        </p-card>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card-container d-flex flex-column">
+        <p-card>
+          <ng-template pTemplate="content">
+            <div class="card chart-card">
+              <p-chart type="line" [data]="data" [options]="options"></p-chart>
+            </div>
+          </ng-template>
+        </p-card>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card-container d-flex flex-column">
+        <p-card>
+          <ng-template pTemplate="title">
+            <div class="card-title">Druckluft</div>
+          </ng-template>
+          <ng-template pTemplate="content">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="description">Verbrauch heute</div>
+                <div class="reading">-1.00 kWh</div>
+              </div>
+              <div class="col-md-3">
+                <div class="description">Leistung heute</div>
+                <div class="reading">-1.00 kW</div>
+              </div>
+              <div class="col-md-3">
+                <div class="description">Verbrauch Betrieb</div>
+                <div class="reading">-1.00 kWh</div>
+              </div>
+              <div class="col-md-3">
+                <div class="description">Verbrauch Standby</div>
+                <div class="reading">0.00 kWh</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="description">Kosten heute</div>
+                <div class="reading">-0.21 $</div>
+              </div>
+              <div class="col-md-3">
+                <div class="description">pro Stunde</div>
+                <div class="reading">-0.21 $</div>
+              </div>
+              <div class="col-md-3">
+                <div class="description">Emmission heute</div>
+                <div class="reading">-0.42 kg</div>
+              </div>
+              <div class="col-md-3">
+                <div class="description">pro Stunde</div>
+                <div class="reading">-0.42 kg</div>
+              </div>
+            </div>
+          </ng-template>
+        </p-card>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card-container d-flex flex-column">
+        <p-card>
+          <ng-template pTemplate="content">
+            <div class="card chart-card">
+              <p-chart type="line" [data]="secondData" [options]="secondOptions"></p-chart>
+            </div>
+          </ng-template>
+        </p-card>
+      </div>
+    </div>
+  </div>
+</div>
